@@ -1,15 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
         <title>Assignment 8 | Create Etsy Search Page</title>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700" rel="stylesheet">
     </head>
 
     <body>
-        
+
+        <div id="mainContainer">
+
+            <header id="headerContainerOuter" class="bodyMaxWidth">
+
+                <div id="headerContainerInner" class="maxWidth100">
+
+                    <div id="headerLeft">
+
+                        <h1>Etsy</h1>
+
+                        <form id="headerSearchBar">
+                            <input type="text" />
+                            <button type="submit" name="Search">Search</button>
+                        </form>
+
+                    </div>
+
+                    <div id="headerRight">
+
+                        <div id="headerNav">
+                            <p class="headerNavButtons">Sell on Etsy</p>
+                            <p class="headerNavButtons">Register</p>
+                            <p class="headerNavButtons" id="signIn">Sign in</p>
+                        </div>
+
+                        <div id="discoverButton">
+                            <i class="fas fa-gem"></i>
+                            <p>Discover</p>
+                        </div>
+
+                        <div id="cartButton">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Cart</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <nav id="navContainerOuter">
+
+                <div id="navContainerInner" class="bodyMaxWidth">
+
+                    <div>
+                        <p>Jewelry & Accessories</p>
+                    </div>
+
+                    <div>
+                        <p>Clothing & Shoes</p>
+                    </div>
+
+                    <div>
+                        <p>Home & Living</p>
+                    </div>
+
+                    <div>
+                        <p>Wedding & Party</p>
+                    </div>
+
+                    <div>
+                        <p>Toys & Entertainment</p>
+                    </div>
+
+                    <div>
+                        <p>Art & Collectibles</p>
+                    </div>
+
+                    <div>
+                        <p>Craft Supplies</p>
+                    </div>
+
+                    <div>
+                        <p>Vintage</p>
+                    </div>
+
+                    <div id="navGifts">
+                        <i class="fas fa-gift"></i>
+                        <p>Gifts</p>
+                    </div>
+
+                </div>
+
+            </nav>
+            
+            <div id="guidedSearchContainerOuter">
+                <div id="guidedSearchContainerInner" class="bodyMaxWidth">
+                    <ul id="guidedSearchList">
+                        <li class="guidedSearchButton">marvel gifts</li>
+                        <li class="guidedSearchButton">loki</li>
+                        <li class="guidedSearchButton">marvel baby</li>
+                        <li class="guidedSearchButton">deadpool</li>
+                        <li class="guidedSearchButton">avengers</li>
+                        <li class="guidedSearchButton">spiderman</li>
+                        <li class="guidedSearchButton">guardians of the galaxy</li>
+                        <li class="guidedSearchButton">marvel svg</li>
+                        <li class="guidedSearchButton">iron man</li>
+                        <li class="guidedSearchButton">captain america</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="mainBodyContainer" class="bodyMaxWidth">
+
+                <form id="sidebarContainer">
+
+                    <div class="sidebarSubcat" id="specOffersSubcat">
+
+                        <fieldset>
+
+                            <legend>
+                                <button type="button">Special offers</button>
+                            </legend>
+
+                            <div class="filterItem">
+                                <input type="checkbox" name="specialOffersCheck" />
+                                <span>On sale</span>
+                            </div>
+                            
+                        </fieldset>
+
+                    </div>
+
+                    <div class="sidebarSubcat">
+
+                        <fieldset>
+
+                            <div>
+                                <ul id="filterCategoriesList">
+                                    <li class="filterListHeader">All categories</li>
+                                    <li class="subListItem filterItem">Arts & Collectibles</li>
+                                    <li class="subListItem filterItem">Books, Movies & Music</li>
+                                    <li class="subListItem filterItem">Home & Living</li>
+                                    <li class="subListItem filterItem">Clothing</li>
+                                </ul>
+                                <button type="button">+ Show more</button>
+                            </div>
+
+                        </fieldset>
+                        
+                    </div>
+
+                    <div class="sidebarSubcat" id="shippingSubcat">
+
+                        <fieldset>
+
+                            <legend>
+                                <button type="button">Shipping</button>
+                            </legend>
+
+                            <div id="shippingBox" class="filterItem">
+                                <div>
+                                    <input type="checkbox" name="shippingCheck" />
+                                    <span>Free shipping</span>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="shippingCheck" />
+                                    <span>Ready to ship in 1 business day</span>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="shippingCheck" />
+                                    <span>Ready to ship within 3 business days</span>
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                    </div>
+
+                    <div class="sidebarSubcat">
+
+                        <fieldset>
+
+                            <legend>
+                                <button type="button">Shop location</button>
+                            </legend>
+
+                            <div class="filterItem">
+                                <div>
+                                    <input type="radio" name="shopLocationRadio" checked="checked" />
+                                    <span>Anywhere</span>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="shopLocationRadio" />
+                                    <span>United States</span>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="shopLocationRadio" />
+                                    <span>Custom</span>
+                                </div>
+                                <div>
+                                    <input type="text" />
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                    </div>
+
+                    <div class="sidebarSubcat">
+
+                        <fieldset>
+
+                            <legend>
+                                <button type="button">Item type</button>
+                            </legend>
+
+                            <div class="filterItem">
+                                <div>
+                                    <input type="radio" name="itemTypeRadio" checked="checked" />
+                                    <span>All items</span>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="itemTypeRadio" />
+                                    <span>Handmade</span>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="itemTypeRadio" />
+                                    <span>Vintage</span>
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                    </div>
+
+                    <div class="sidebarSubcat">
+
+                        <fieldset>
+
+                            <legend>
+                                <button type="button">Price($)</button>
+                            </legend>
+
+                            <div class="filterItem">
+                                <div>
+                                    <input type="radio" name="priceRadio" checked="checked" />
+                                    <span>Any price</span>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="priceRadio" />
+                                    <span>Under $25</span>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="priceRadio" />
+                                    <span>$25 to $50</span>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="priceRadio" />
+                                    <span>$50 to $100</span>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="priceRadio" />
+                                    <span>Over $100</span>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="priceRadio" />
+                                    <span>Custom</span>
+                                </div>
+                                <div id="priceCustomDiv">
+                                    <input type="text" placeholder="Low" />
+                                    <span>to</span>
+                                    <input type="text" placeholder="High" />
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                        
+                    </div>
+
+                    <div class="sidebarSubcat" id="orderOptsSubcat">
+
+                        <fieldset>
+
+                            <legend>
+                                <button type="button">Ordering options</button>
+                            </legend>
+
+                            <div class="filterItem">
+                                <div>
+                                    <input type="checkbox" name="orderOptionsCheck" />
+                                    <span>Accepts Etsy gift cards</span>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="orderOptionsCheck" />
+                                    <span>Customizable</span>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="orderOptionsCheck" />
+                                    <span>Can be gift-wrapped</span>
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                    </div>
+
+                    <div class="sidebarSubcat">
+
+                        <fieldset>
+
+                            <legend>
+                                <button type="button">Ship to</button>
+                            </legend>
+
+                            <div>
+                                <select name="shipTo">
+                                    <option value="" disabled>Choose country...</option>
+                                    <optgroup label="&#8213;&#8213;&#8213;">
+                                        <option value="US" selected="selected">United States</option>
+                                        <option value="UK">United Kingdom</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="FR">France</option>
+                                        <option value="JP">Japan</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                        </fieldset>
+
+                    </div>
+
+                </form>
+
+                <div id="searchResultsContainer">
+
+                    <div id="searchHeaderContainer">
+                        <div id="searchHeaderLeft">
+                            <span>All categories</span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span>"marvel" (98,639 Results)</span>
+                        </div>
+
+                        <div id="searchHeaderRight">
+                            <span>Sort by: </span>
+                            <span>Relevancy </span>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                    <div id="itemsListContainer">
+                        <!-- Template for a listed item for reference only
+
+                        <div class="item">
+                            <img src="http://placehold.it/200/200" />
+                            <p class="itemTitle">${product-title}</p>
+                            <p class="sellerName">${seller-name}</p>
+                            <p class="itemPrice">${currency-symbol}${price}</p>
+                        </div> -->
+                    </div>
+
+                    <div id="relatedSearchContainer">
+
+                        <div id="relatedTo">
+                            <p>Related to marvel</p>
+                        </div>
+
+                        <div id="relatedListings">
+                            <div class="relatedListColumn">
+                                <p>captain marvel</p>
+                                <p>marvel shirt</p>
+                                <p>avengers</p>
+                                <p>super why</p>
+                            </div>
+                            <div class="relatedListColumn">
+                                <p>marvel poster</p>
+                                <p>marvel gifts</p>
+                                <p>marvel svg</p>
+                                <p>captain america</p>
+                            </div>
+                            <div class="relatedListColumn">
+                                <p>iron man</p>
+                                <p>loki</p>
+                            </div>
+                        </div>
+
+                        <div id="searchPageNavBar">
+                            <div class="pageNavButton previousPageButton"><i class="fas fa-angle-left"></i></div>
+                            <div class="pageNavButton firstPageButton"><p>1</p></div>
+                            <div class="pageNavButton"><p>2</p></div>
+                            <div class="pageNavButton"><p>3</p></div>
+                            <div class="pageNavButton"><p>4</p></div>
+                            <div class="pageNavButton"><p>5</p></div>
+                            <div class="pageNavButton"><p>6</p></div>
+                            <div class="pageNavButton"><p>7</p></div>
+                            <div class="pageNavButton"><p>8</p></div>
+                            <div class="pageNavButton morePagesButton"><p>...</p></div>
+                            <div class="pageNavButton lastPageButton"><p>250</p></div>
+                            <div class="pageNavButton nextPageButton"><i class="fas fa-angle-right"></i></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- JS Files -->
+        <script src="items.js"></script>
+        <script src="main.js"></script>
+
     </body>
 
 </html>

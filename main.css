@@ -5,3 +5,416 @@ Html {
 *, *::after, *::before {
     box-sizing: inherit;
 }
+
+.bodyMaxWidth {
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.maxWidth100 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#headerContainerOuter, #headerContainerInner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#headerContainerInner {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#headerLeft {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#headerLeft h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    color: rgb(242, 77, 1);
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+#headerLeft h1, #headerLeft form {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#headerLeft input, #headerLeft button {
+    padding: 10px;
+    border-style: solid;
+}
+
+#headerLeft input {
+    background-color: rgb(250, 250, 249);
+    border-width: 1px;
+    border-color: rgb(180, 180, 180);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 35em;
+}
+
+#headerLeft input:hover {
+    border-color: rgb(130, 130, 130);
+}
+
+#headerLeft input:focus {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    outline: none;
+}
+
+#headerLeft button {
+    border: 1px solid rgb(0, 0, 0);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-left: -10px;
+    width: 7em;
+}
+
+#headerRight {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+#headerRight p.headerNavButtons {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+#headerNav {
+    display: flex;
+    flex-direction: row;
+    border-right: 1px solid rgba(127, 127, 127, .15);
+}
+
+#signIn {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+#signIn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#discoverButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-right: 1px solid rgba(127, 127, 127, .15);
+}
+
+#discoverButton p, #cartButton p {
+    font-size: 12px;
+}
+
+#cartButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#discoverButton, #cartButton {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#navContainerInner, #navContainerOuter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navContainerOuter {
+    border-top: 1px solid rgb(225, 227, 223);
+}
+
+#navContainerInner {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 300;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+}
+
+#navContainerInner p {
+    margin: 10px;
+}
+
+#navContainerInner div {
+    border-top: 3px transparent;
+    border-bottom: 3px transparent;
+}
+
+#navContainerInner div:hover {
+    border-bottom: 3px solid rgb(242, 77, 1);
+}
+
+#navGifts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navGifts i {
+    font-size: 12px;
+}
+
+#guidedSearchContainerOuter {
+    border-top: 1px solid rgb(225, 227, 223);
+}
+
+#guidedSearchList {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 10px;
+}
+
+.guidedSearchButton {
+    padding: 8px 12px;
+    margin-right: 5px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 300;
+    background-color: rgb(255, 162, 88);
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.15)
+}
+
+.guidedSearchButton:hover {
+    background-color: rgb(254, 200, 121);
+}
+
+#sidebarContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    float: left;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.sidebarSubcat {
+    border-radius: 5px;
+    margin: 10px 10px 0 10px;
+}
+
+.sidebarSubcat fieldset {
+    border: none;
+    border-radius: 5px;
+}
+
+.sidebarSubcat fieldset legend button, .sidebarSubcat fieldset div button {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+#specOffersSubcat {
+    background-color: rgb(251, 234, 217);
+}
+
+#shippingSubcat, #orderOptsSubcat {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+}
+
+#filterCategoriesList {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.filterListHeader {
+    margin: 0;
+}
+
+.subListItem {
+    padding-left: 10px;
+}
+
+.filterItem {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#shippingBox {
+    display: flex;
+    flex-direction: column;
+}
+
+#priceCustomDiv input {
+    width: 40px;
+}
+
+#searchResultsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#searchHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#searchHeaderLeft {
+    margin-left: 10px;
+}
+
+#searchHeaderLeft i {
+    font-size: 10px;
+}
+
+#searchHeaderRight {
+    margin-right: 20px;
+}
+
+#itemsListContainer {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#itemsListContainer div {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.item {
+    position: relative;
+}
+
+.heartIcon {
+    position: absolute;
+    left: 235px;
+    top: 5px;
+}
+
+.heartIcon:hover {
+    font-size: 20px;
+    transition: font-size 0.1s;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    max-width: 260px;
+    max-height: 260px;
+}
+
+.item p {
+    margin: 0;
+    padding-top: 3px;
+}
+
+.itemTitle {
+    font-weight: 300;
+}
+
+.sellerName {
+    font-weight: 100;
+}
+
+.itemPrice {
+    font-weight: 700;
+}
+
+.textTruncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#relatedSearchContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    margin-top: 1em;
+    margin-left: 10px;
+}
+
+#relatedListings {
+    display: flex;
+}
+
+#relatedListings p {
+    font-weight: 300;
+}
+
+.relatedListColumn {
+    margin-right: 8em;
+}
+
+#searchPageNavBar {
+    display: flex;
+    margin-top: 10px;
+}
+
+.pageNavButton {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.previousPageButton {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.nextPageButton {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.pageNavButton i, .pageNavButton p {
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.previousPageButton, .morePagesButton {
+    background-color: rgb(250, 249, 245);
+}
+
+.firstPageButton {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(240, 240, 236);
+}
